@@ -1,0 +1,231 @@
+@import 'https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,600,700,800,900&display=swap';
+@import 'https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap';
+@import 'https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600,700&display=swap';
+@import 'https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@300,400,500,600,700,800,900&display=swap';
+@import 'https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap';
+@import 'tailwindcss';
+@import '@taxilkath/ui/styles/preset.css';
+@import './pdf-viewer.css';
+@import '@taxilkath/ui/styles/shiki.css';
+@import '@taxilkath/ui/styles/typography.css';
+@import './nprogress.css';
+@source '../../../../packages/ui/src/**/*.{js,jsx,ts,tsx}';
+
+@theme {
+  --color-anchor: var(--anchor);
+
+  --background-image-nav-link-indicator: var(--nav-link-indicator);
+  --background-image-email-button: var(--email-button);
+
+  --shadow-feature-card: var(--feature-card);
+
+  /* Enhanced Font Families - Premium Tech Startup Feel */
+  --font-family-heading: 'Cabinet Grotesk', 'Satoshi', 'Clash Display', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-family-display: 'Clash Display', 'Cabinet Grotesk', 'Satoshi', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-family-sans: var(--font-sans), 'Switzer', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-family-body: 'Switzer', 'Inter', 'Satoshi', ui-sans-serif, system-ui, sans-serif;
+  --font-family-mono: var(--font-mono), 'JetBrains Mono', ui-monospace, monospace;
+  --font-family-accent: 'General Sans', 'Cabinet Grotesk', 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --anchor: rgb(255, 34, 14);
+
+  --nav-link-indicator: radial-gradient(
+    44.6% 825% at 50% 50%,
+    rgb(255 133 133) 0%,
+    rgb(255 72 109 / 0) 100%
+  );
+  --email-button: linear-gradient(180deg, rgb(210 10 30) 5%, rgb(239 90 90) 100%);
+
+  --feature-card: 0 -1px 3px 0 rgb(0 0 0 / 0.05);
+}
+
+.dark {
+  --anchor: rgb(255, 69, 51);
+
+  --nav-link-indicator: radial-gradient(
+    44.6% 825% at 50% 50%,
+    rgb(255 28 28) 0%,
+    rgb(255 72 109 / 0) 100%
+  );
+
+  --feature-card: 0 0 0 1px rgb(255 255 255 / 0.06), 0 -1px rgb(255 255 255 / 0.1);
+}
+
+/* Enhanced Typography System - Premium Tech Startup Feel */
+body {
+  font-family: var(--font-family-body) !important;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading) !important;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+/* Enhanced font classes with better hierarchy */
+.font-heading {
+  font-family: var(--font-family-heading) !important;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.font-display {
+  font-family: var(--font-family-display) !important;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.font-body {
+  font-family: var(--font-family-body) !important;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.6;
+}
+
+.font-accent {
+  font-family: var(--font-family-accent) !important;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+}
+
+/* Premium Hero text styling */
+.hero-text {
+  font-family: var(--font-family-display) !important;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "liga" 1, "kern" 1;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+/* Enhanced button text */
+.btn-text {
+  font-family: var(--font-family-accent) !important;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Premium section titles */
+.section-title {
+  font-family: var(--font-family-heading) !important;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+/* Enhanced card text */
+.card-text {
+  font-family: var(--font-family-body) !important;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+}
+
+/* Force premium fonts on key elements with enhanced styling */
+.hero-text, .font-heading, h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading) !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "liga" 1, "kern" 1;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+.font-display, .hero-text {
+  font-family: var(--font-family-display) !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "liga" 1, "kern" 1;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+@property --border-angle {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+
+/* Timeline Card Styles */
+.timeline-card {
+  --border-size: 1px;
+  --border-angle: 0deg;
+  position: relative;
+  background-clip: padding-box;
+  border: solid var(--border-size) transparent;
+  border-radius: 1.25rem;
+  background: hsl(var(--muted) / 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid hsl(var(--border) / 0.3);
+  box-shadow: 
+    inset 0 1px 1px hsl(var(--muted) / 0.8),
+    0 4px 12px -4px hsl(var(--foreground) / 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Glowing border effect */
+.timeline-card::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--border-angle),
+    hsl(var(--primary) / 0.9),
+    hsl(var(--accent) / 0.7) 25%,
+    hsl(var(--primary) / 0.9) 50%,
+    hsl(var(--accent) / 0.7) 75%,
+    hsl(var(--primary) / 0.9)
+  );
+  filter: blur(12px);
+  animation: border-spin 6s linear infinite paused;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.timeline-card-hover-glow::after {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+/* Enhanced hover effects */
+.timeline-card:hover {
+  border-color: hsl(var(--primary) / 0.6);
+  box-shadow: 
+    inset 0 1px 1px hsl(var(--card) / 1),
+    0 8px 24px -8px hsl(var(--primary) / 0.3),
+    0 0 0 1px hsl(var(--primary) / 0.2);
+  transform: translateY(-2px);
+}
+
+@keyframes border-spin {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 8s linear infinite;
+}
+
+
+

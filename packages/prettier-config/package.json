@@ -1,0 +1,51 @@
+{
+  "name": "@taxilkath/prettier-config",
+  "version": "0.0.19",
+  "description": "The prettier config for taxilkath's projects",
+  "homepage": "https://github.com/taxilkath/tkPortfolio#readme",
+  "bugs": {
+    "url": "https://github.com/taxilkath/tkPortfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taxilkath/tkPortfolio.git",
+    "directory": "packages/prettier-config"
+  },
+  "license": "MIT",
+  "author": "taxilkath <taxilkathiriya9@gmail.com> (https://github.com/taxilkath/)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "clean": "rm -rf .turbo dist",
+    "dev": "tsdown --watch",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint --fix .",
+    "type-check": "tsc --noEmit"
+  },
+  "lint-staged": {
+    "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix"
+  },
+  "devDependencies": {
+
+    "@taxilkath/tsconfig": "workspace:*"
+  },
+  "peerDependencies": {
+    "prettier": "3.x",
+    "prettier-plugin-packagejson": "^2.5.18",
+    "prettier-plugin-tailwindcss": "^0.6.12"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

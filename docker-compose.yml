@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  redis:
+    image: redis
+    container_name: tkportfolio-redis
+    ports:
+      - '6379:6379'
+    volumes:
+      - redis:/data
+    networks:
+      - tkportfolio-network
+
+  serverless-redis-http:
+    image: hiett/serverless-redis-http:latest
+    container_name: tkportfolio-redis-http
+    ports:
+      - '8079:80'
+    environment:
+      SRH_MODE: env
+      SRH_TOKEN: tkportfolio
+      SRH_CONNECTION_STRING: 'redis://redis:6379'
+    networks:
+      - tkportfolio-network
+    depends_on:
+      - redis
+
+volumes:
+  db:
+  redis:
+
+networks:
+  tkportfolio-network:
+    driver: bridge

@@ -1,0 +1,78 @@
+---
+name: Superstar Teen Patti - Multiplayer Server
+homepage: https://github.com/Superstar-Teen-Patti/Superstar-Teen-Patti-Multiplayer-Server
+github: https://github.com/Superstar-Teen-Patti/Superstar-Teen-Patti-Multiplayer-Server
+description: A real-time multiplayer backend server for the popular Indian poker game Teen Patti, featuring game logic, user accounts, tournaments, virtual currency, and social features.
+techstack:
+  - Node.js
+  - Express
+  - MongoDB
+  - Docker
+  - Git
+  - Nginx
+  - Mongoose
+  - Redis
+  - JavaScript
+  - Socket.IO
+  - RESTful APIs
+  - Game Server Architecture
+  - Real-Time Communication
+  - Virtual Currency System
+  - Social Features
+learning:
+  - Architecting real-time multiplayer game servers
+  - Building scalable socket-based systems
+  - Implementing custom game logic and card ranking engines
+  - Designing secure user account and virtual currency systems
+  - Managing stateful gameplay and social interactions in multiplayer environments
+---
+
+A full-featured, production-grade multiplayer backend for **Teen Patti**, a massively popular Indian three-card poker game. Built using **Node.js**, **Express**, **MongoDB**, and **Socket.IO**, the system powers seamless real-time gameplay across multiple table types, user profiles, bots, tournaments, and monetization features.
+
+Designed to support mobile or web-based clients, the system offers all backend functionalities necessary to run a complete online Teen Patti platform — from card logic to social interaction.
+
+---
+
+## 🎮 Game Overview
+
+- Classic Teen Patti (blind, chaal, sideshow, showdown)
+- Multiple table types: Public, Private, and Tournaments
+- Game variants: AK47, Muflis, Lowest Joker, and more
+- AI Bots to auto-fill empty tables and keep games running
+- Fair card dealing via server-side shuffling and hand ranking logic
+
+---
+
+## 🂠 Core Modules
+
+### 👤 User Management
+- Guest and third-party authentication (e.g., Facebook)
+- Unique user IDs, avatars, in-game stats
+- Persistent chip/coin balance and game history
+
+### 💰 Virtual Currency System
+- Chips: Used for betting, gifting, and tipping
+- Coins: Premium currency for exclusive features
+- In-app economy with starting balances and daily bonuses
+
+### 🤝 Social Features
+- Friends list, friend requests, block/mute functionality
+- Table chat and real-time messaging
+- Virtual gifts and dealer tips during gameplay
+
+### 🏆 Engagement Mechanics
+- Leaderboards (weekly, global, and friends)
+- Daily login bonuses and weekly prize winners
+- Mini-games: High-Low, Andar-Bahar
+- Tournament support with prize pools and buy-ins
+- Notifications for invites, gifts, and achievements
+
+---
+
+## ⚠️ Challenges Faced
+- Maintaining game state consistency in a real-time multiplayer setup
+- Avoiding race conditions in betting rounds and turn transitions
+- Designing scalable socket architecture for thousands of concurrent users
+- Balancing monetization with fair gameplay
+- Ensuring security for in-app purchases and sensitive user data
+

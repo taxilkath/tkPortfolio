@@ -1,0 +1,52 @@
+---
+name: DeckDuel - Server
+homepage: https://github.com/DeckDuel/DeckDuel-Multiplayer-Server
+github: https://github.com/DeckDuel/DeckDuel-Multiplayer-Server
+description: A real-time multiplayer backend server inspired by Andar Bahar, featuring user management, card logic, bidding mechanics, bots, and in-app monetization.
+techstack:
+  - Node.js
+  - Express.js
+  - MongoDB
+  - Socket.IO
+  - RESTful APIs
+  - In-App Purchases
+learning:
+  - Designing time-sensitive card game logic with fairness and consistency
+  - Managing socket-based game state for real-time multiplayer
+  - Building scalable backend systems for betting-style card games
+  - Integrating monetization flows with chip and coin economies
+  - Implementing social features with chat and friends systems
+---
+
+A full-featured real-time backend for **DeckDuel**, an online multiplayer card game inspired by the traditional Indian game **Andar Bahar**. Built using **Node.js**, **Express**, **MongoDB**, and **Socket.IO**, it powers dynamic, fast-paced betting gameplay with multiple game tables, real users or bots, and social interaction.
+
+The system supports all backend features required for a complete mobile or web-based casino-style card game — from card logic and turn timers to user accounts, in-game currency, and monetization.
+
+---
+
+## ✨Features
+
+- 🕹️ Real-time Andar Bahar gameplay with multiplayer and intelligent bot support
+- 🎯 Two-phase bidding system with suspenseful turn timers and pacing
+- 🃏 Server-side deck generation, shuffle, draw, and win logic
+- 🧑‍💼 Player profiles with avatar, chips, coins, win/loss stats, and levels
+- 🔐 Guest login and third-party auth (e.g., Facebook OAuth)
+- 💰 Dual currency system: chips (betting) and coins (cosmetics, power-ups)
+- 👫 Friends system, requests, blocking, and real-time in-game chat
+- 🎁 Virtual gifts using chips during matches with animations
+- 📈 Leaderboards (Global, National, Friends) and weekly contests
+- 🎉 Daily chip bonuses and in-game system notifications
+- 🛍️ Chip and coin stores with in-app purchase integration
+- 🛠️ Built with Node.js, Express.js, MongoDB, and Socket.IO
+- 🧾 REST API support for assets and profile uploads
+- 🗂️ Modular architecture for game logic, user flow, and scalability
+
+---
+
+## ⚠️ Challenges Faced
+
+- Managing card fairness and win validation in real-time
+- Handling concurrency issues with socket disconnections and reconnects
+- Preventing abuse or exploits in the bidding system
+- Balancing monetization with a fun, fair experience
+- Keeping the user session, game state, and currency data in sync under stress

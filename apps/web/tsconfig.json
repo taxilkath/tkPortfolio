@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "content-collections": ["./.content-collections/generated"],
+      "~/*": ["./public/*"]
+    },
+    "plugins": [{ "name": "next" }]
+  },
+  "exclude": ["node_modules"],
+  "extends": "@taxilkath/tsconfig/nextjs.json",
+  "include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.mjs",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.mts",
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
+  ]
+}

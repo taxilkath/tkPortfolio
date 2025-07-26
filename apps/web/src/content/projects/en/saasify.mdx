@@ -1,0 +1,65 @@
+---
+name: SaaSify Studio
+description: A full-stack AI-powered platform to generate SaaS blueprints, manage projects, and visualize user journeys with drag-and-drop Kanban and flow diagrams.
+homepage: https://saasify.studio
+github: https://github.com/yourusername/saasify-studio
+techstack:
+  - TypeScript
+  - Next.js 15
+  - React 19
+  - Tailwind CSS 4
+  - Shadcn UI
+  - Framer Motion
+  - MongoDB
+  - Mongoose
+  - Clerk
+  - Zustand
+  - React Query
+  - React Flow
+  - Dnd Kit
+  - Recharts
+  - OpenAI API (gpt-4o-mini)
+selected: true
+learning:
+  - Building an AI-first product from ideation to deployment
+  - Balancing schema flexibility with type safety (Mixed + Zod)
+  - Designing modular, interactive dashboards (drag/drop, charts)
+  - Implementing Clerk-based auth middleware and protected routing
+  - Handling dynamic AI-generated JSON and frontend validation
+---
+
+SaaSify Studio is a full-stack AI SaaS builder that allows users to input an idea and instantly generate a complete product blueprint with features, tech stack, diagrams, and a kanban task board.
+
+It’s designed for entrepreneurs, product managers, and indie makers to rapidly ideate and prototype their next SaaS product with the help of AI.
+
+---
+
+## ✨ Features
+
+- 🤖 AI-generated SaaS blueprints using OpenAI API
+- 🧩 Structured JSON content with frontend validation using Zod
+- 🗂️ Project dashboard with quick preview and tabbed access
+- 🧭 Tabbed studio workspace: Overview, Blueprint, Flow Diagram, Kanban
+- 🧠 Interactive user journey visualization using React Flow
+- 📋 Drag-and-drop Kanban board using @dnd-kit
+- 📈 Data visualization with Recharts for project insights
+- 🧑‍💼 Clerk-based user authentication with protected routes
+- 👤 User profile management and session handling
+- ⚡ Zustand + TanStack Query for global + server state
+- 🔒 Secure project deletion with confirmation dialog
+- 📦 Scalable MongoDB backend with Mongoose schemas
+- 🧠 Smart fallback for schema-less AI content (Mongoose Mixed)
+- 💅 Clean UI with Tailwind CSS 4 + Shadcn + Framer Motion
+- 📝 MCP for AI-powered code generation
+
+---
+
+## ⚠️ Challenges Faced
+
+- Designing a robust prompt format that returns usable JSON from GPT-4o
+- Validating AI responses without strict backend schema (used Zod + Mixed)
+- Handling drag-drop logic and persistence in the Kanban board
+- Balancing real-time UI updates with React Query cache sync
+- Managing auth middleware across protected Next.js App Router pages
+- Keeping content readable while still fully editable and flexible
+

@@ -1,0 +1,26 @@
+{
+  "name": "@taxilkath/env",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The validated environment variables for taxilkath's projects",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "clean": "rm -rf .turbo",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint --fix .",
+    "type-check": "tsc --noEmit"
+  },
+  "lint-staged": {
+    "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix"
+  },
+  "dependencies": {
+    "@t3-oss/env-nextjs": "^0.13.6",
+    "zod": "^3.25.51"
+  },
+  "devDependencies": {
+
+    "@taxilkath/tsconfig": "workspace:*"
+  }
+}

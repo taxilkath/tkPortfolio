@@ -1,0 +1,69 @@
+---
+name: JobCore
+description: A full-stack AI-powered job search and resume tailoring platform that aggregates job listings from top ATS providers and enhances applications using intelligent GPT-based resume insights.
+homepage: https://jobcore.example.com
+github: https://github.com/yourusername/jobcore
+techstack:
+  - React 18
+  - Vite
+  - Tailwind
+  - Node
+  - Express
+  - TypeScript
+  - MongoDB
+  - Mongoose
+  - Typesense
+  - Redis (Upstash)
+  - Supabase Auth
+  - OpenAI GPT-4o-mini
+  - Docker & Docker Compose
+  - Nginx
+  - Vercel Blob
+  - Framer Motion
+  - Uppy
+  - Lucide React Icons
+  - Multer
+  - pdf-parse
+  - mammoth
+selected: true
+learning:
+  - Architecting containerized microservices with Docker and Nginx reverse proxy
+  - Integrating GPT-4o-mini for AI-powered resume tailoring and real-time suggestions
+  - Optimizing search performance with Typesense and Redis caching
+  - Implementing seamless OAuth and secure authentication with Supabase
+  - Parsing complex resume file formats for accurate text extraction
+  - Managing infinite scroll, dynamic filters, and UI responsiveness in React with Tailwind
+---
+
+JobCore is a sophisticated, containerized job search and resume optimization platform. It aggregates listings from multiple ATS platforms like Workday, Greenhouse, and Lever, while providing AI-powered resume analysis to improve job application success rates.
+
+---
+
+## ✨ Features
+
+- 🔎 Unified job search combining internal DB and external ATS listings
+- ⚡ High-speed typo-tolerant search powered by Typesense
+- 🔁 Infinite scroll loading for external job results
+- 🗂️ Advanced filtering by company, salary, experience, job type, and location
+- 🧑‍💼 Secure authentication and OAuth via Supabase
+- 📄 Resume upload and parsing (PDF, DOC, DOCX) with pdf-parse and mammoth
+- 🤖 AI Tailoring Studio powered by OpenAI for resume optimization
+- 📁 Cloud storage of resumes via Vercel Blob and file upload with Uppy
+- 🧾 User dashboard to manage resumes, saved jobs, and applications
+- 🧩 Company and platform directory with ATS platform integration
+- 🎨 Modern UI with React, Tailwind CSS, Framer Motion, and Lucide icons
+- 🐳 Fully containerized microservices with Docker and managed via Docker Compose
+- 🌐 Nginx reverse proxy for routing frontend and backend traffic
+- 🐳 Docker and Docker Compose for containerization
+
+---
+
+## 🔥 Challenges
+
+- **AI Integration Complexity:** Balancing Open API calls to provide quick and relevant resume feedback without sacrificing performance.
+- **Multi-Platform Aggregation:** Harmonizing job data from diverse ATS APIs, each with unique schemas and rate limits.
+- **File Parsing Accuracy:** Extracting clean text from various resume file formats to maximize AI analysis quality.
+- **Scalable Search Architecture:** Keeping Typesense indexes in sync with MongoDB data and ensuring Redis cache consistency.
+- **UX/DevOps Synchronization:** Maintaining parity between development and production environments using Docker, and ensuring smooth frontend hot module replacement with Vite behind Nginx.
+
+---

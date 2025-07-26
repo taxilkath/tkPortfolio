@@ -1,0 +1,37 @@
+{
+  "name": "@taxilkath/i18n",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The internationalization package for taxilkath's projects",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./client": "./src/client.ts",
+    "./config": "./src/config.ts",
+    "./middleware": "./src/middleware.ts",
+    "./request": "./src/request.ts",
+    "./routing": "./src/routing.ts",
+    "./server": "./src/server.ts",
+    "./messages/*.json": "./src/messages/*.json"
+  },
+  "scripts": {
+    "clean": "rm -rf .turbo",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint --fix .",
+    "type-check": "tsc --noEmit"
+  },
+  "lint-staged": {
+    "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix"
+  },
+  "devDependencies": {
+
+    "@taxilkath/tsconfig": "workspace:*",
+    "@types/react": "^19.1.6",
+    "next": "^15.3.3",
+    "next-intl": "^4.1.0"
+  },
+  "peerDependencies": {
+    "next": "^15",
+    "next-intl": "^4"
+  }
+}

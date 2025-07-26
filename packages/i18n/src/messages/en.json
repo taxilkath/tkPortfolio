@@ -1,0 +1,133 @@
+{
+  "about": {
+    "description": "👋 Hi there! I am Taxil, a Full Stack Developer who loves coding and building web applications.",
+    "title": "About",
+    "sections": {
+      "summary": "Who Am I",
+      "experience": "Professional Experience",
+      "education": "Education",
+      "certifications": "Certifications",
+      "skills": "Skills",
+      "contact": "Contact Information"
+    }
+  },
+
+  "command-menu": {
+    "actions": {
+      "copy-link": "Copy link",
+      "source-code": "Source code"
+    },
+    "groups": {
+      "account": "Account",
+      "general": "General",
+      "social": "Social"
+    },
+    "no-results": "No results found.",
+    "open-menu": "Open command menu",
+    "placeholder": "Type a command or search"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "error": "Error",
+    "sign-in": "Sign in",
+    "sign-in-error": "Failed to sign in. Please try again.",
+    "sign-out": "Sign out"
+  },
+  "component": {
+    "go-to-homepage": "Go to homepage"
+  },
+  "dialog": {
+    "sign-in": {
+      "continue-with": "Continue with {provider}",
+      "description": "to continue to [your website]",
+      "last-used": "Last used"
+    }
+  },
+  "error": {
+    "something-went-wrong": "Something went wrong!",
+    "try-again": "Try again"
+  },
+  "homepage": {
+    "about-me": {
+      "coding-hours": "Coding hours",
+      "connect": "Connect",
+      "fav-framework": "Fav. framework",
+      "location": "Manchester, United Kingdom",
+      "more": "Know more about me",
+      "stacks": "Stacks",
+      "title": "About Me"
+    },
+    "get-in-touch": {
+      "description": "Feel free to reach out to me!",
+      "image-alt": "Me sit in front of my desk and coding",
+      "title": "Any questions about Next.js?"
+    },
+    "hero": {
+      "amazing": "Innovative",
+      "attractive": "Scalable",
+      "fantastic": "Efficient",
+      "location-timezone": "Manchester, United Kingdom • UTC/GMT +1",
+      "stunning": "Powerful",
+      "title-bottom": "Next.js, Node.js, TypeScript",
+      "title-middle-left": "building",
+      "title-middle-right": "web apps using",
+      "title-top": "I'm Taxil, a Full Stack Developer"
+    },
+    "selectedProjects": {
+      "card": "Project",
+      "more": "See all project",
+      "title": "Selected Projects"
+    }
+  },
+  "hook": {
+    "copy-to-clipboard": {
+      "copied": "Copied to clipboard!",
+      "error": "Unable to copy to clipboard. Please try again!"
+    }
+  },
+  "layout": {
+    "about": "About",
+    "facebook": "Facebook",
+    "github": "GitHub",
+    "home": "Home",
+    "instagram": "Instagram",
+    "links": "Links",
+    "now-playing": {
+      "error": "Failed to fetch Spotify data",
+      "loading": "Loading ...",
+      "not-listening": "Not Listening - Spotify"
+    },
+    "profile": "Profile",
+    "projects": "Projects",
+    "skip-to-main-content": "Skip to main content",
+    "toggle-menu": "Toggle menu",
+    "uses": "Uses",
+    "youtube": "YouTube"
+  },
+  "mdx": {
+    "link-to-section": "Link to section"
+  },
+  "metadata": {
+    "site-description": "Taxil - Full Stack Developer",
+    "site-title": "Taxil - Full Stack Developer"
+  },
+  "not-found": "Page Not Found!",
+  "projects": {
+    "description": "Projects forged with precision, passion, and pure love ❤️.",
+    "title": "Projects",
+    "visit-website": "Visit Website"
+  },
+  "theme-toggle": {
+    "options": {
+      "dark": "Dark",
+      "light": "Light",
+      "system": "System"
+    },
+    "toggle-theme": "Toggle theme"
+  },
+  "uses": {
+    "description": "This is the equipment I currently use for gaming and programming every day.",
+    "title": "Uses"
+  }
+}

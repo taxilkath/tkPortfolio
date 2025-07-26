@@ -1,0 +1,61 @@
+{
+  {{#unless shouldPublish}}
+  "private": true,
+  {{/unless}}
+  "name": "@taxilkath/{{ name }}",
+  "version": "{{ version }}",
+  "description": "{{{ description }}}",
+  "license": "MIT",
+  {{#if shouldPublish}}
+  "author": "taxilkath <taxilkathiriya9@gmail.com> (https://github.com/taxilkath/)",
+  "homepage": "https://github.com/taxilkath/tkPortfolio#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taxilkath/tkPortfolio.git",
+    "directory": "packages/{{ name }}"
+  },
+  "bugs": {
+    "url": "https://github.com/taxilkath/tkPortfolio/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  {{/if}}
+  "type": "module",
+  {{#if shouldCompile}}
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  {{else}}
+  "exports": {
+    ".": {
+      "import": "./dist/index.ts"
+    }
+  },
+  {{/if}}
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint --fix .",
+    "type-check": "tsc --noEmit"
+    {{#if shouldCompile}}
+    ,"build": "tsdown",
+    "dev": "tsdown --watch",
+    "clean": "rm -rf .turbo dist"
+    {{else}}
+    ,"clean": "rm -rf .turbo"
+    {{/if}}
+  },
+  "devDependencies": {
+    "@taxilkath/eslint-config": "workspace:*",
+    "@taxilkath/tsconfig": "workspace:*"
+  },
+  "lint-staged": {
+    "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix"
+  }
+}

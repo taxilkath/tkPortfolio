@@ -1,0 +1,35 @@
+{
+  "name": "@taxilkath/tsconfig",
+  "version": "0.0.15",
+  "description": "The typescript config for taxilkath's projects",
+  "homepage": "https://github.com/taxilkath/tkPortfolio#readme",
+  "bugs": {
+    "url": "https://github.com/taxilkath/tkPortfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taxilkath/tkPortfolio.git",
+    "directory": "packages/tsconfig"
+  },
+  "license": "MIT",
+  "author": "taxilkath <taxilkathiriya9@gmail.com> (https://github.com/taxilkath/)",
+  "type": "module",
+  "files": [
+    "base.json",
+    "nextjs.json",
+    "react-library.json"
+  ],
+  "lint-staged": {
+    "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix"
+  },
+  "devDependencies": {
+    "next": "^15.3.3"
+  },
+  "peerDependencies": {
+    "next": "^15",
+    "typescript": "5.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

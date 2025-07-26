@@ -1,0 +1,4 @@
+{
+  "exclude": ["apps/**", "packages/**"],
+  "include": ["**/*.js", "**/*.ts"]
+}

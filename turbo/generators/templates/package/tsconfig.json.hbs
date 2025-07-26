@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  {{#if shouldCompile}}
+  "exclude": ["node_modules", "dist"],
+  {{else}}
+  "exclude": ["node_modules"],
+  {{/if}}
+  {{#if isReactPackage}}
+  "extends": "@taxilkath/tsconfig/react-library.json",
+  "include": ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.js", "**/*.jsx", "**/*.mjs"]
+  {{else}}
+  "extends": "@taxilkath/tsconfig/base.json",
+  "include": ["**/*.ts", "**/*.mts", "**/*.js", "**/*.mjs"]
+  {{/if}}
+}
