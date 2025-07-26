@@ -6,7 +6,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "pnpm with-env next build",
+    "build": "cross-env CI=true pnpm with-env next build",
     "build:mdx": "content-collections build",
     "bundle-analyzer": "cross-env ANALYZE=true pnpm run build",
     "clean": "rm -rf .next .turbo .content-collections test-results playwright-report",

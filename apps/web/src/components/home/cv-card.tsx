@@ -1,11 +1,9 @@
-    import { useTranslations } from '@taxilkath/i18n/client'
     import { Button } from '@taxilkath/ui'
     import { Download, FileText, Calendar, MapPin } from 'lucide-react'
     import { useState } from 'react'
     import WordViewer from '../word-viewer'
 
     const CVCard = () => {
-        const t = useTranslations()
         const [isWordViewerOpen, setIsWordViewerOpen] = useState(false)
 
         // CV Word document URL pointing to the actual file in public directory

@@ -7,7 +7,6 @@ import { getTranslations, setRequestLocale } from '@taxilkath/i18n/server'
 import AboutMe from '@/components/home/about-me'
 import GetInTouch from '@/components/home/get-in-touch'
 import Hero from '@/components/home/hero'
-import Metrics from '@/components/home/metrics'
 import SelectedProjects from '@/components/home/selected-projects'
 import {
   SITE_FACEBOOK_URL,
@@ -87,7 +86,6 @@ const Page = async (props: PageProps) => {
       <Hero />
       <SelectedProjects />
       <AboutMe />
-      <Metrics />
       <GetInTouch />
     </>
   )
