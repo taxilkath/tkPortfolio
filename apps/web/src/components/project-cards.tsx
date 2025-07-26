@@ -26,7 +26,7 @@ const ProjectCard = (props: ProjectCardProps) => {
   const { name, description, techstack, slug } = props
 
   // List of slugs for projects that should show a video or diagram
-  const videoProjects = ['saasify', 'somta', 'jobcore','clinic']
+  const videoProjects = ['saasify', 'somta', 'jobcore','clinic','portfolio']
   const diagramProjects = ['teenpatti', 'andarbahar']
 
   return (

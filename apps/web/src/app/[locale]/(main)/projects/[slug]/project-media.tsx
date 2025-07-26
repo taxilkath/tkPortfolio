@@ -90,7 +90,7 @@ export const ProjectMedia = ({ slug, name }: { slug: string; name: string }) => 
         setLightboxContent(null)
     }
 
-    const videoProjects = ['saasify', 'somta', 'jobcore','clinic']
+    const videoProjects = ['saasify', 'somta', 'jobcore','clinic','portfolio']
     const diagramProjects = ['teenpatti', 'andarbahar']
 
     const renderMedia = () => {
