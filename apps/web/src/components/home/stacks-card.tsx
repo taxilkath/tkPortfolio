@@ -1,29 +1,44 @@
 'use client'
 
-import {
+import {  
   SiCloudflare,
   SiCss,
   SiDrizzle,
   SiFigma,
   SiFirebase,
+  SiFramer,
   SiGit,
+  SiGithub,
   SiHtml5,
   SiJavascript,
   SiMarkdown,
   SiMysql,
   SiNextdotjs,
   SiNodedotjs,
+  SiCypress,
+  SiPnpm,
   SiPostgresql,
   SiPrisma,
   SiPython,
   SiRadixui,
   SiReact,
   SiReactquery,
+  SiRedis,
+  SiSpotify,
   SiTailwindcss,
+  SiTurborepo,
   SiTypescript,
+  SiVercel,
   SiVite,
   SiVitest,
-  SiOpenai
+  SiWakatime,
+  SiYoutube,
+  SiZod,
+  SiOpenai,
+  SiMongodb,
+  SiDocker,
+  SiExpress,
+  SiSocketdotio
 } from '@icons-pack/react-simple-icons'
 import { useTranslations } from '@taxilkath/i18n/client'
 import { Marquee } from '@taxilkath/ui'
@@ -47,23 +62,32 @@ const StacksCard = () => {
         <SiTailwindcss className='size-10' />
         <SiNextdotjs className='size-10' />
         <SiReact className='size-10' />
-        <SiPython className='size-10' />
-        <SiPostgresql className='size-10' />
         <SiRadixui className='size-10' />
+        <SiFramer className='size-10' />
+        <SiReactquery className='size-10' />
+        <SiZod className='size-10' />
+        <SiMongodb className='size-10' />
+        <SiDocker className='size-10' />
+        <SiExpress className='size-10' />
+        <SiSocketdotio className='size-10' />
       </Marquee>
       <Marquee gap='20px' className='py-4' reverse fade pauseOnHover>
-        <SiPrisma className='size-10' />
-        <SiMysql className='size-10' />
-        <SiFirebase className='size-10' />
-        <SiGit className='size-10' />
-        <SiVite className='size-10' />
         <SiDrizzle className='size-10' />
-        <SiCloudflare className='size-10' />
-        <SiMarkdown className='size-10' />
-        <SiOpenai className='size-10' />
-        <SiVitest className='size-10' />
+        <SiPostgresql className='size-10' />
+        <SiRedis className='size-10' />
+        <SiVercel className='size-10' />
+        <SiTurborepo className='size-10' />
+        <SiPnpm className='size-10' />
         <SiNodedotjs className='size-10' />
-        <SiReactquery className='size-10' />
+        <SiGithub className='size-10' />
+        <SiSpotify className='size-10' />
+        <SiWakatime className='size-10' />
+        <SiYoutube className='size-10' />
+        <SiVitest className='size-10' />
+        <SiCypress className='size-10' />
+        <SiMysql className='size-10' />
+        <SiOpenai className='size-10' />
+        <SiMarkdown className='size-10' />
       </Marquee>
     </div>
   )

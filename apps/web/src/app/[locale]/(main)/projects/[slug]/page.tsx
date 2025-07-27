@@ -19,6 +19,16 @@ import Header from './header'
 import { ProjectMedia } from './project-media' // ✨ IMPORT the new component
 import { Marquee } from '@taxilkath/ui'
 
+// Helper function to render tech logo
+const renderTechLogo = (tech: Tech) => {
+  if (typeof tech.logo === 'string') {
+    return null // Don't show anything for string logos
+  }
+  
+  const LogoComponent = tech.logo
+  return <LogoComponent className='h-5 w-5 text-slate-300 transition-colors duration-300' />
+}
+
 type PageProps = {
   params: Promise<{
     slug: string
@@ -136,7 +146,16 @@ const Page = async (props: PageProps) => {
     'Styling',
     'Content',
     'Deployment',
-    'DevOps'
+    'Testing',
+    'Tools',
+    'APIs',
+    'Animation',
+    'State Management',
+    'Validation',
+    'HTTP Client',
+    'Email',
+    'Analytics',
+    'Desktop'
   ]
 
   const jsonLd: WithContext<SoftwareApplication> = {
@@ -206,7 +225,7 @@ const Page = async (props: PageProps) => {
                                       key={tech.name}
                                       className='flex items-center gap-2 rounded-lg bg-slate-800/40 px-3 py-2 backdrop-blur-sm transition-all duration-300'
                                     >
-                                      <tech.logo className='h-5 w-5 text-slate-300 transition-colors duration-300' />
+                                      {renderTechLogo(tech)}
                                       <span className='text-sm font-medium text-slate-200 transition-colors duration-300'>
                                         {tech.name}
                                       </span>
@@ -219,7 +238,7 @@ const Page = async (props: PageProps) => {
                                     key={tech.name}
                                     className='flex items-center gap-2 rounded-lg bg-slate-800/40 px-3 py-2 backdrop-blur-sm transition-all duration-300'
                                   >
-                                    <tech.logo className='h-5 w-5 text-slate-300 transition-colors duration-300' />
+                                    {renderTechLogo(tech)}
                                     <span className='text-sm font-medium text-slate-200 transition-colors duration-300'>
                                       {tech.name}
                                     </span>
